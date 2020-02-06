@@ -19,14 +19,6 @@
     "lint": "eslint src stories/**/*.mdx",
     "lint:fix": "npm run lint -- --fix",
     "validate": "npm run prettier -- --list-different && npm run lint",
-    "shield:install": "run-p shield:install:*",
-    "shield:install:tokens": "npm install --prefix @usb-shield/design-tokens",
-    "shield:install:components": "npm install --prefix @usb-shield/components-react",
-    "shield:install:storybook": "npm run sb:install --prefix @usb-shield/components-react",
-    "shield:build": "run-s shield:build:*",
-    "shield:build:tokens": "npm run build --prefix @usb-shield/design-tokens",
-    "shield:build:components": "npm run dist --prefix @usb-shield/components-react",
-    "shield:storybook": "npm run sb --prefix @usb-shield/components-react",
     "postinstall": "npm run shield:install"
   },
   "husky": {
