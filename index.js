@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import App from './App';
 import './style.css';
 
-class App extends Component {
+class RootApp extends Component {
   constructor() {
     super();
     this.state = {
@@ -16,4 +16,4 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<RootApp />, document.getElementById('root'));
